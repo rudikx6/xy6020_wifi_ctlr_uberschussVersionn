@@ -41,7 +41,7 @@ void MqttClient::topicCallback(char *topic, byte *payload,
       auto sensor = doc[sensor_name];
       if (sensor.containsKey("Power")) {
         float power_value = sensor["Power"];
-        power_value += mXy.actualPower();
+        //power_value += mXy.actualPower();  //deaktiviert für solar überschuss version Rudikx6
         if (power_value > 0) {
           if (power_value > mCfg.max_power) {
             power_value = mCfg.max_power;
