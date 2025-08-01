@@ -1,11 +1,14 @@
 # Angepasste Version für Solarüberschuss steuerung.
 Netzteil --> xy6020 --> Victron Laderegler --> Akku
+
 Per MQTT wird die gewünschte Ausgangsleistung übergeben (z.b. der Anteil des aktuellen solarüberschuss)
-Auf der Weboberfläche ist dies als "gesetzte Leistung" sichtbar. Die SW passt dann entsprechend der aktuell eingestellten Spannung den errechneten Strom als neuen Maximalwert ein. 
+Auf der Weboberfläche ist dies als "gesetzte Leistung" sichtbar. Die SW stellt dann entsprechend der aktuell eingestellten Spannung den errechneten Strom als neuen Maximalwert ein. 
 
 Die option "Zero feed-in mode" muss gesetzt bleiben!
 
 <img width="1030" height="753" alt="image" src="https://github.com/user-attachments/assets/4432d37c-dbd0-4bad-9cdb-8177c10f0796" />
+
+
 
 
 
